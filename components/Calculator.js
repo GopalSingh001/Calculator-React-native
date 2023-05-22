@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ScrollView, Pressable } from 'react-native';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet,TextInput } from 'react-native';
 import Btn from './Buttons';
 
  
@@ -10,14 +10,14 @@ const Calculator = () => {
     
  
     return (
-        <View style={styles.main} >
+        <View style={styles.main}>
             <ScrollView style={{ width: '100%' }}>
 
-                <Text style={styles.field} >{result}</Text>
+                <Text  style={styles.field}>{result}</Text>
 
             </ScrollView>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
-                <Btn title='AC' type='top' color='top' SetResult={SetResult} result={result} />
+            <View style={{flexDirection:'row',flexWrap:'wrap'}}>
+                <Btn title='AC' type='top' color='top' SetResult={SetResult} result={result}/>
                 <Btn title='X' type='top' color='top' SetResult={SetResult} result={result} />
                 <Btn title='%' type='top' color='top' SetResult={SetResult} result={result} />
                 <Btn title='/' type='right' color='right' SetResult={SetResult} result={result} />
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
         paddingVertical: 20,
         backgroundColor: 'black',
         alignItems: 'center',
+      
 
 
     },

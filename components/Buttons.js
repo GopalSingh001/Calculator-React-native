@@ -29,7 +29,7 @@ const Btn = ({ title, type, color, SetResult, result }) => {
     justifyContent: 'center',
     alignItems: 'center',
     height: 70,
-    width: 70,
+    width:70,
     margin: 14,
     backgroundColor: getBackgroundColor(type),
 
